@@ -34,7 +34,7 @@ export class App {
   }
 
   private database(): void {
-    mongoose.connect('mongodb+srv://admin_cozinha:cozinha123@cluster0.8al7w.mongodb.net/apicozinha?retryWrites=true&w=majority', {
+    mongoose.connect('', {
       useNewUrlParser: true,
       useUnifiedTopology: true
     }).catch(err => console.log('Mongoose error', err))
