@@ -1,10 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
-import usuarioRoute from './routes/usuario.route'
 import alimentosRoute from './routes/alimentos.route'
-
-
 
 
 export class App {
@@ -44,8 +41,7 @@ export class App {
   }
   
   private routes(): void {
-    this.express.use('/', alimentosRoute)
+    this.express.use('/alimentos', alimentosRoute)
   }
 
-  
 }
